@@ -1,0 +1,16 @@
+version,hypothesis,change,opponents,maps,results,regressions,decision
+V5-P0,Known portal with unseen exit can be considered safely,Risk-adjusted hidden portal scoring,V4,"Arena; Default Small; Schooltime",3W-3L,"No overall win gain in initial screen",REVISE
+V5-P1,Severely depleted team can split an unseen-tail long dragon,Early guarded partial-body split,V4,9 replay maps both sides,9W-9L,"Extra splits did not improve win rate",REVISE
+V5-A,Combine portal and split hypotheses,Aggressive portal score plus guarded split,V4,11 replay maps both sides,10W-11L-1D,"Both sides lost on Default and Queen Of Spades",REVISE
+V5-B,Restrict portal exploration to poor local routes,Conservative portal score plus guarded split,V4,11 replay maps both sides,12W-9L-1D,"Both sides lost on Trophy and Autarky",KEEP_AS_CANDIDATE
+V5-B-V3,Check preservation against V3,Same final V5-B code,V3,11 replay maps both sides,13W-9L,"Both sides lost on Prisoners Dilemma",KEEP_AS_CANDIDATE
+V5-B-V2,Check regression against V2,Same final V5-B code,V2,11 replay maps both sides,7W-14L-1D,"Major regression versus V2",DO_NOT_PROMOTE
+V5-classic,Classic route scoring may recover V2 performance,Use classic route scoring throughout game,V2,4 difficult replay maps both sides,1W-7L,"No broad recovery",REJECT
+V5-leaders,V2-style initial leader keepers may recover length,Switch V4 keeper selection to initial leaders,V2,4 difficult replay maps both sides,2W-6L,"No broad recovery",REJECT
+V5-V2-rescue,Rescue splits can preserve units when V2 walks into a closed pocket,Add optional cul-de-sac and no-route rescue to exact V2,V2;V3;V4,11 replay maps both sides,15W-7L vs V2;16W-6L vs V3;14W-8L vs V4,"Crafted tail-vacate map exposes fatal false-positive split",REVISE
+V5-V2-tailguard,A vacating own tail can reopen the selected route,Suppress optional rescue when visible tail will vacate into a normal exit,V2;V3;V4,11 replay maps both sides,15W-7L vs V2;15W-7L vs V3;14W-8L vs V4,"Stronghold remains 0W-2L vs V2",PROMOTE_LOCAL
+V5-V2-tailguard-extra,Check map sensitivity beyond replay set,Unchanged final tailguard,V2;V3;V4,3 additional local maps both sides,4W-2L vs V2;5W-1L vs V3;5W-1L vs V4,"Maps were already used in prior local development",SUPPORTING
+V5-V2-shortrescue,Limit optional and fallback rescue to short dragons,Only split length at most five,V2,6 selected replay maps both sides,6W-6L,"Stronghold still 0W-2L and crafted length-five false positive remains",REJECT
+V5-V2-childguard,Require a visible child exit for optional rescue,Guard tail child's known free exit,V2,6 selected replay maps both sides,8W-4L,"Lost Schooltime B-side relative to tailguard",REJECT
+V5-V2-lategate,Preserve length with fewer late rescue splits,Suppress optional rescue late when team population is low,V2,Stronghold and Schooltime both sides,0W-2L Stronghold;2W-0L Schooltime,"No Stronghold improvement",REJECT
+V5-V2-leadersafe,Preserve initial long leaders,Suppress optional rescue for protected leaders,V2,Stronghold and Schooltime both sides,0W-2L Stronghold;2W-0L Schooltime,"No Stronghold improvement",REJECT
