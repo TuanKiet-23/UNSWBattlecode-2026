@@ -1,6 +1,6 @@
 # BigHero | UNSW Battlecode 2026
 
-**Python Strategy Bot | Team of 2 | Peak Leaderboard Rank: 126**
+**Python Strategy Bot | Team of 2 | Peak Leaderboard Rank:126**
 
 ## Overview
 
