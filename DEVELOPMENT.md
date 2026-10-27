@@ -1,4 +1,4 @@
-# BigHero – Development & Iteration
+# BigHero – Development & Iteration 
 
 ## Overview
 
