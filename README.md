@@ -42,14 +42,6 @@ Our development process included:
 - Testing tactical behaviour across different maps and scenarios.
 - Reviewing performance and execution constraints before finalising the bot.
 
-## Competition Achievement
-
-**UNSW Battlecode 2026**
-
-**Peak Leaderboard Rank: #126**
-
-Developed collaboratively as a two-person team.
-
 ## Technologies and Skills
 
 Python · Algorithms · Graph-Based Navigation · Heuristic Search · Problem Solving · Software Testing · Debugging
